@@ -22,13 +22,14 @@ body {
     color: #AAAAAA !important;
 }
 
-.jumbotron button {
+.jumbotron a.btn {
     position: relative;
     top: -35px;
     color: white !important;
+    text-shadow: none;
 }
 
-.thumbnail {
+.img-thumbnail {
     border: none !important;
     box-shadow: none  !important;
     background-color: transparent !important;
@@ -41,11 +42,27 @@ a.anchor {
 }
 
 .tint {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(70%);
+
+    filter: grayscale(70%);
 }
 
 .tint:hover {
     -webkit-filter: grayscale(0%);
+
     filter: grayscale(0%);
+}
+
+.skills {
+    -webkit-filter: grayscale(70%) opacity(50%);
+    filter: grayscale(70%) opacity(50%);
+    
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+}
+
+.skills:hover {
+    -webkit-filter: grayscale(0%) opacity(100%);
+    filter: grayscale(0%) opacity(100%);
 }
