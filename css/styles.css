@@ -5,8 +5,6 @@ body {
 .jumbotron {
     margin-top: 55px;
     background: url("../images/bg/halifax_bg02.png");
-    -webkit-filter: ;
-    filter: ;
     color: rgba(20,20,20,0.50);
     background-position: center;
     text-shadow: 2px 2px #202020;
