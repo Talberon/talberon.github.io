@@ -1,3 +1,6 @@
+//AngularJS
+var app = angular.module('PortfolioApp', []);
+
 //Smooth-scrolling for anchor tags
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
