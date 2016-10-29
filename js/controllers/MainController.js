@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope) {
+app.controller('MainController', ['$scope', 'github', function($scope, github) {
     $scope.nonsense = 'Project View';
 
     $scope.projects = [{
@@ -19,4 +19,8 @@ app.controller('MainController', ['$scope', function($scope) {
         description: 'Data application that helps you decide which game in your collection to play next!',
         url: 'https://talberon.github.io'
     }];
+
+    github.success(function(data){
+        $scope.repositories = data;
+    });
 }]);
