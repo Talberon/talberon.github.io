@@ -1,5 +1,5 @@
-app.controller('MainController', ['$scope', 'github', function($scope, github) {
-    $scope.nonsense = 'Project View';
+app.controller('MainController', ['$scope', '$sce', 'githubRepos', 'githubREADMEs', function($scope, $sce, githubRepos, githubREADMEs) {
+    $scope.nonsense = 'PROJECTSSSS';
 
     $scope.projects = [{
         title: 'Ars Tactica',
@@ -20,7 +20,21 @@ app.controller('MainController', ['$scope', 'github', function($scope, github) {
         url: 'https://talberon.github.io'
     }];
 
-    github.success(function(data){
+    githubRepos.success(function(data){
         $scope.repositories = data;
+
+        githubREADMEs.getAPIgithubREADMEs().success(function(data){
+            $scope.readmes = $sce.trustAsHtml(data);
+        });
     });
+
+    $scope.updateREADME = function(repo){
+        $scope.selectedProject = repo.name;
+        githubREADMEs.getAPIgithubREADMEs(repo.url).success(function(data){
+            $scope.readmes = $sce.trustAsHtml(data);
+        }).error(function(err){
+            $scope.readmes = $sce.trustAsHtml("Not found.");
+        });
+    };
+
 }]);

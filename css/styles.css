@@ -33,7 +33,7 @@ body {
     background-color: transparent !important;
 }
 
-a.anchor {
+a.anchor.section {
     position: relative;
     top: -100px;
     visibility: hidden;
