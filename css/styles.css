@@ -7,11 +7,11 @@ body {
     background: url("../images/bg/halifax_bg02.png");
     color: rgba(20,20,20,0.50);
     background-position: center;
-    text-shadow: 2px 2px #202020;
 }
 
 .jumbotron h1 {
     color: white !important;
+    text-shadow: 2px 2px #202020;
 }
 
 .jumbotron h1 small {
@@ -25,6 +25,16 @@ body {
     top: -35px;
     color: white !important;
     text-shadow: none;
+}
+
+.jumbotron p {
+    color: white !important;
+}
+
+.jumbotron .well {
+    background: rgb(0,0,0);
+    background: rgba(0,0,0, 0.7);
+    border: hidden;
 }
 
 .img-thumbnail {
@@ -55,9 +65,23 @@ a.anchor.section {
     -webkit-filter: grayscale(70%) opacity(50%);
     filter: grayscale(70%) opacity(50%);
     
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     padding: 10px;
+}
+
+.carousel {
+    background: rgb(50,50,50);
+}
+
+.carousel img {
+    margin: auto;
+    height: 300px !important;
+    object-fit: contain;
+}
+
+.carousel-caption p {
+    background: rgba(0,0,0,0.4);
 }
 
 .skills:hover {
@@ -68,4 +92,9 @@ a.anchor.section {
 .nav-icon {
     height: 24px;
     width: 24px;
+}
+
+.label {
+    position: relative;
+    top: -4px;
 }

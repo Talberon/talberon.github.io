@@ -11,8 +11,8 @@ app.factory('githubRepos', function($http) {
 app.factory('githubREADMEs', function($http) {
     $http.defaults.headers.get = {'Accept': 'application/vnd.github.v3.html'};
 
-    var repoLink = '';
-    var APIgithubREADMEs = {};
+    var repoLink = 'https://api.github.com/repos/Talberon/ArsTactica';
+    var APIgithubREADMEs = { title: repoLink };
 
     APIgithubREADMEs.getAPIgithubREADMEs = function(url){
         if (url == null){
