@@ -39,6 +39,46 @@ app.controller('MainController', ['$scope', '$sce', 'githubRepos', 'githubREADME
     };
 
     $scope.jobs = [{
+        title: 'Consultant, Java Developer (Full Stack)',
+        timeline: 'March 2018 - Present (TBD)',
+        employer: 'CGI Group, Inc.',
+        location: 'Halifax, NS',
+        description: 'Developing and testing full stack solutions in Java and MariaDB for a new product using a microservices architecture. Testing with JUnit and developing in an Agile development team using Gitflow.',
+        url: 'http://www.cgi.com/',
+    },
+	{
+        title: 'Consultant, Java Developer',
+        timeline: 'October 2017 - February 2018 (5 months)',
+        employer: 'CGI Group, Inc.',
+        location: 'Halifax, NS',
+        description: 'Developed and tested a large human resourcing application using Java 6, Ant, JUnit and Team Foundation Server in an Agile development team.',
+        url: 'http://www.cgi.com/',
+    },
+	{
+        title: 'Consultant, Java Application Support',
+        timeline: 'July 2017 - September 2017 (3 months)',
+        employer: 'CGI Group, Inc.',
+        location: 'Halifax, NS',
+        description: '',
+        url: 'http://www.cgi.com/',
+    },
+	{
+        title: 'Consultant, Java Developer/Tester',
+        timeline: 'April 2017 - June 2017 (3 months)',
+        employer: 'CGI Group, Inc.',
+        location: 'Halifax, NS',
+        description: 'Developed and tested microservices for a satellite imaging client using new Java 8 technologies and test automation tools such as Cucumber in an Agile development structure.',
+        url: 'http://www.cgi.com/',
+    },
+	{
+        title: 'Consultant, Oracle PL/SQL Developer',
+        timeline: 'December 2016 - April 2017 (5 months)',
+        employer: 'CGI Group, Inc.',
+        location: 'Halifax, NS',
+        description: 'everse engineering of legacy code to facilitate rewrite of business rules from Oracle PLSQL to Java services.',
+        url: 'http://www.cgi.com/',
+    },
+	{
         title: 'Consultant, Database QA Tester',
         timeline: 'March 2016 - May 2016 (3 months)',
         employer: 'CGI Group, Inc.',
