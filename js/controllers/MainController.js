@@ -72,7 +72,7 @@ app.controller('MainController', ['$scope', '$sce', 'githubRepos', 'githubREADME
     },
 	{
         title: 'Consultant, Oracle PL/SQL Developer',
-        timeline: 'December 2016 - April 2016 (5 months)',
+        timeline: 'December 2016 - April 2017 (5 months)',
         employer: 'CGI Group, Inc.',
         location: 'Halifax, NS',
         description: 'everse engineering of legacy code to facilitate rewrite of business rules from Oracle PLSQL to Java services.',
