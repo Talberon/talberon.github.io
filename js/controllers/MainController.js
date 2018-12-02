@@ -43,7 +43,7 @@ app.controller('MainController', ['$scope', '$sce', 'githubRepos', 'githubREADME
         timeline: 'March 2018 - Present (TBD)',
         employer: 'CGI Group, Inc.',
         location: 'Halifax, NS',
-        description: 'Developing and testing full stack solutions in Java and MariaDB for a new product using a microservices architecture. Testing with JUnit and developing in an Agile development team using Gitflow.',
+        description: 'Developing and testing full stack solutions in Java 8+, Spring, AngularJS and MariaDB for an aviation client. Automated testing with JUnit and Cucumber and developing in an Agile team using Gitflow and Docker deployments.',
         url: 'http://www.cgi.com/',
     },
 	{
